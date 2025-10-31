@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EditKaro.in — Portfolio</title>
+  <meta name="description" content="Portfolio — short form, long form, gaming, football, eCommerce ads, documentary, color grading, anime, ads." />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">Edit<span>Karo</span></a>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="portfolio-hero" data-aos="fade-up">
+      <div class="container">
+        <h1>Our Video Portfolio</h1>
+        <p>Click any thumbnail to preview. Use filters to view categories.</p>
+      </div>
+    </section>
+
+    <section class="portfolio" data-aos="fade-up">
+      <div class="container">
+        <div class="filter-buttons" aria-label="Portfolio filters">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="short">Short Form</button>
+          <button class="filter-btn" data-category="long">Long Form</button>
+          <button class="filter-btn" data-category="gaming">Gaming</button>
+          <button class="filter-btn" data-category="football">Football</button>
+          <button class="filter-btn" data-category="ecommerce">eCommerce Ads</button>
+          <button class="filter-btn" data-category="documentary">Documentary</button>
+          <button class="filter-btn" data-category="colorgrading">Color Grading</button>
+          <button class="filter-btn" data-category="anime">Anime</button>
+          <button class="filter-btn" data-category="ads">Ads</button>
+        </div>
+
+        <div class="gallery" id="gallery">
+          <!-- Add as many cards as you like. Use data-video-id with YouTube ID -->
+          <div class="video-card" data-category="short" data-video-id="5O0YDHiosD0" data-aos="zoom-in">
+            <img loading="lazy" src="https://img.youtube.com/vi/5O0YDHiosD0/maxresdefault.jpg" alt="Short-form">
+            <div class="overlay"><span class="play-btn">▶</span></div>
+          </div>
+
+          <div class="video-card" data-category="football" data-video-id="3WQkiuMp_uS8NHs" data-aos="zoom-in">
+            <img loading="lazy" src="https://youtube.com/shorts/gOwMeHtnesQ?si=v3WQkiuMp_uS8NHs.jpg" alt="Football">
+            <div class="overlay"><span class="play-btn">▶</span></div>
+          </div>
+
+          <div class="video-card" data-category="gaming" data-video-id="f02mOEt11OQ" data-aos="zoom-in">
+            <img loading="lazy" src="https://img.youtube.com/vi/f02mOEt11OQ/maxresdefault.jpg" alt="Gaming">
+            <div class="overlay"><span class="play-btn">▶</span></div>
+          </div>
+
+          <div class="video-card" data-category="football" data-video-id="2bKjJlFzYgA" data-aos="zoom-in">
+            <img loading="lazy" src="https://img.youtube.com/vi/2bKjJlFzYgA/maxresdefault.jpg" alt="Football">
+            <div class="overlay"><span class="play-btn">▶</span></div>
+          </div>
+
+          <div class="video-card" data-category="ecommerce" data-video-id="y6120QOlsfU" data-aos="zoom-in">
+            <img loading="lazy" src="https://img.youtube.com/vi/y6120QOlsfU/maxresdefault.jpg" alt="eCommerce">
+            <div class="overlay"><span class="play-btn">▶</span></div>
+          </div>
+
+          <!-- Placeholder cards for other categories (replace IDs) -->
+          <div class="video-card" data-category="documentary" data-video-id="dQw4w9WgXcQ" data-aos="zoom-in">
+            <img loading="lazy" src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Documentary">
+            <div class="overlay"><span class="play-btn">▶</span></div>
+          </div>
+
+          <div class="video-card" data-category="colorgrading" data-video-id="3JZ_D3ELwOQ" data-aos="zoom-in">
+            <img loading="lazy" src="https://img.youtube.com/vi/3JZ_D3ELwOQ/maxresdefault.jpg" alt="Color Grading">
+            <div class="overlay"><span class="play-btn">▶</span></div>
+          </div>
+
+          <div class="video-card" data-category="anime" data-video-id="M7lc1UVf-VE" data-aos="zoom-in">
+            <img loading="lazy" src="https://img.youtube.com/vi/M7lc1UVf-VE/maxresdefault.jpg" alt="Anime">
+            <div class="overlay"><span class="play-btn">▶</span></div>
+          </div>
+
+          <div class="video-card" data-category="ads" data-video-id="9bZkp7q19f0" data-aos="zoom-in">
+            <img loading="lazy" src="https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg" alt="Ad">
+            <div class="overlay"><span class="play-btn">▶</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>EditKaro.in</h4>
+        <p>Creative video editing & social media marketing.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <a href="index.html">Home</a><br/>
+        <a href="about.html">About</a><br/>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>hello@editkaro.in</p>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year2"></span> EditKaro.in</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox hidden" aria-hidden="true">
+    <div class="lightbox-content" role="dialog" aria-modal="true">
+      <button id="close-lightbox" class="close" aria-label="Close">&times;</button>
+      <iframe id="video-frame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script>document.addEventListener('DOMContentLoaded',()=>document.getElementById('year2').textContent=new Date().getFullYear());</script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

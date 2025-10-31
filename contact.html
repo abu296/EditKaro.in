@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact EditKaro.in</title>
+  <meta name="description" content="Contact — send a message or request a quote." />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">Edit<span>Karo</span></a>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero" data-aos="fade-up">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Send your brief — we’ll get back within 24 hours.</p>
+      </div>
+    </section>
+
+    <section class="contact-page" data-aos="fade-up">
+      <div class="container">
+        <form id="contactForm" action="https://script.google.com/macros/s/AKfycby7i_RZwJhj-f7fkmM_RXgqJ-wpgTvyUf8rHsmzR1vbabq5b34a_bBJ9pKfXyUQSmvP/exec" method="POST" class="contact-form">
+          <div class="form-grid">
+            <div class="form-col">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required>
+            </div>
+            <div class="form-col">
+              <label for="emailc">Email</label>
+              <input id="emailc" name="email" type="email" required>
+            </div>
+            <div class="form-col">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel">
+            </div>
+            <div class="form-col full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <button class="btn primary" type="submit">Send Message</button>
+            <p id="contactMsg" class="form-msg" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>EditKaro.in</h4>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>hello@editkaro.in</p>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year4"></span> EditKaro.in</p>
+  </footer>
+
+  <script>document.addEventListener('DOMContentLoaded',()=>document.getElementById('year4').textContent=new Date().getFullYear());</script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

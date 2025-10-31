@@ -1,0 +1,35 @@
+// Google Sheets integration for EditKaro.in
+
+const EMAIL_SHEET = 'Email_Collector';
+const CONTACT_SHEET = 'Contact_Form';
+
+function doPost(e) {
+  try {
+    // ✅ Parse JSON safely
+    const data = JSON.parse(e.postData.contents || '{}');
+
+    // ✅ Open sheet by ID (use only the ID, not full URL)
+    const ss = SpreadsheetApp.openById('1kxtChbK8KdaT3NX8WrprRWO1gNHkFuJC_psPW96iJPs');
+
+    if (data.message) {
+      ss.getSheetByName(CONTACT_SHEET).appendRow([
+        new Date(), data.name, data.email, data.phone, data.message
+      ]);
+    } else if (data.email) {
+      ss.getSheetByName(EMAIL_SHEET).appendRow([
+        new Date(), data.email
+      ]);
+    } else {
+      throw new Error('Invalid data');
+    }
+
+    return ContentService
+      .createTextOutput(JSON.stringify({ result: 'success' }))
+      .setMimeType(ContentService.MimeType.JSON);
+
+  } catch (err) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ result: 'error', message: err.toString() }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}

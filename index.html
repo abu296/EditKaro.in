@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EditKaro.in — Home</title>
+  <meta name="description" content="EditKaro.in — creative video editing & social media marketing" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">Edit<span>Karo</span></a>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero" data-aos="fade-up">
+      <div class="container hero-inner">
+        <h1>Transform Your Videos with <span>EditKaro.in</span></h1>
+        <p class="lead">We craft captivating edits for brands, creators and businesses — short-form, long-form, ads, documentaries and more.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="portfolio.html">View Portfolio</a>
+          <a class="btn outline" href="contact.html">Get a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe" data-aos="fade-up">
+      <div class="container">
+        <h2>Join our mailing list</h2>
+        <p>Get latest edits, tutorials and offers from EditKaro.in</p>
+
+        <form id="emailForm" action="https://script.google.com/macros/s/AKfycby7i_RZwJhj-f7fkmM_RXgqJ-wpgTvyUf8rHsmzR1vbabq5b34a_bBJ9pKfXyUQSmvP/exec" method="POST" class="email-form">
+          <div class="form-row">
+            <input type="email" name="email" id="subEmail" placeholder="Your email address" required>
+            <button type="submit" class="btn primary">Subscribe</button>
+          </div>
+          <p id="emailMsg" class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="features" data-aos="fade-up">
+      <div class="container grid-3">
+        <div class="feature card">
+          <h3>Quality Editing</h3>
+          <p>Professional cuts, transitions and finishing — delivered fast.</p>
+        </div>
+        <div class="feature card">
+          <h3>Creative Storytelling</h3>
+          <p>We shape narratives that resonate with audiences on every platform.</p>
+        </div>
+        <div class="feature card">
+          <h3>Platform Optimized</h3>
+          <p>Vertical, square or widescreen — edits optimized for performance.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>EditKaro.in</h4>
+        <p>Creative video editing & social media marketing.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <a href="portfolio.html">Portfolio</a><br/>
+        <a href="about.html">About</a><br/>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>hello@editkaro.in</p>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> EditKaro.in</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox hidden" aria-hidden="true">
+    <div class="lightbox-content" role="dialog" aria-modal="true">
+      <button id="close-lightbox" class="close" aria-label="Close">&times;</button>
+      <iframe id="video-frame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script>document.addEventListener('DOMContentLoaded',()=>document.getElementById('year').textContent=new Date().getFullYear());</script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
